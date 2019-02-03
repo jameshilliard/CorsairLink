@@ -1,0 +1,69 @@
+
+The drivers in the directory h80 are drivers for the "Corsair H80i/H100i"
+enclosed water coolers. Also the Corsair Link "Commander with a Cooling
+Node", attached. These drivers are setup to support lm-sensors through
+the /sys (sysfs) interface. These are the first version of these
+drivers and they supply only read only information for lm-sensors.
+Settings of modes and such are not done at this point. While it looks
+like it is easy to add these. I did not want to do this until I am
+sure any major bugs that may exist are "shaken-out" through testing
+and the drivers have some amount of "road-time"... Also I did not
+do the LED support for the H80i or the LED-node. Again for the same
+reasons...  I have been running both drivers for about two weeks 
+(running the system 24 hours a day) with the above
+mentioned hardware (which is what I have). This system is running
+ubuntu 13.10 and has both psensor and gkrellm running (to cause
+extra traffic through the drivers) on top of the lm-sensor for that 
+version of Linux.  I did not see any negative events and what
+looks like real and meaningful results have been getting reported
+for the test time. 
+
+There is a makefile in the directory that should automatically make the
+driver modules and can be used to install the modules in the correct
+directory. Just simply running make will build the drivers. To install
+them type "make install". This does not make the driver automatically
+load however. Since making that happen can be different for different
+distro's, I elected to not add that here. I did my development on
+ubuntu 13.10 and for that you need to add entries in /etc/modules
+Also once you have the drivers installed you could use modprobe
+to manually load the drivers and rmmod to unload them. 
+
+I used the OpenCorsairLink from the forum page to develop these
+drivers. I converted it from C++ to C since it makes it a good
+test bed for the driver (its much easier to do it in user-land
+first) and any tests I did could be easily
+tranfered to the driver. I supplied this code in the tar-ball.
+Note that there is a problem with the driver's detecting hardware
+during early booting and the work around makes use of this
+hacked up program (see the comment at the begining of either
+driver module source file). Also since current lm-sensors libsensors
+does not support usb sensors there is a patched version (again
+from ubuntu 13.10 code). I also supplied a patch file...
+ 
+Now I want to explain why I did these drivers. The main reason is 
+that I have a system with the hardware and for what I do with it,
+it is not reasonable or exceptable to run Windows on it. I am an
+Operating system engineer and use it to access other systems related
+to my job.  I was reading through the Corsair forums and found
+that some other users did the hard work of finding out how the
+hardware's interfaces work. So I thought I would write Linux
+drivers and give it back to those who did this hard work...
+When I have time I am planning on submitting these drivers for
+inclusion in the kernel and the changes to lm-sensor to support
+the drivers.  If you find this stuff helpful, please take it
+and use it! If you improve it give it back to the community..
+
+Now I want to thank the users which made this code possible
+by posting the information in the forums page:
+
+http://forum.corsair.com/v3/showthread.php?t=120092&highlight=linux&page=3
+
+This is the motivation that caused me to write these drivers.
+So thank you CFSworks and Thatualle1970!!
+
+
+Thank You
+barryha
+
+barryha@earthlink.net
+Barryha

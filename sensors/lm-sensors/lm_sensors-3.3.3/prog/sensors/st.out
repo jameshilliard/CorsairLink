@@ -1,0 +1,638 @@
+19139 execve("./sensors", ["sensors"], [/* 77 vars */]) = 0
+19139 brk(0)                            = 0x199e000
+19139 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+19139 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d8000
+19139 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+19139 open("/usr/local/lib/tls/x86_64/libsensors.so.4", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+19139 stat("/usr/local/lib/tls/x86_64", 0x7fff83e225b0) = -1 ENOENT (No such file or directory)
+19139 open("/usr/local/lib/tls/libsensors.so.4", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+19139 stat("/usr/local/lib/tls", 0x7fff83e225b0) = -1 ENOENT (No such file or directory)
+19139 open("/usr/local/lib/x86_64/libsensors.so.4", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+19139 stat("/usr/local/lib/x86_64", 0x7fff83e225b0) = -1 ENOENT (No such file or directory)
+19139 open("/usr/local/lib/libsensors.so.4", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+19139 stat("/usr/local/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+19139 open("/usr/lib32/tls/x86_64/libsensors.so.4", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+19139 stat("/usr/lib32/tls/x86_64", 0x7fff83e225b0) = -1 ENOENT (No such file or directory)
+19139 open("/usr/lib32/tls/libsensors.so.4", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+19139 stat("/usr/lib32/tls", 0x7fff83e225b0) = -1 ENOENT (No such file or directory)
+19139 open("/usr/lib32/x86_64/libsensors.so.4", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+19139 stat("/usr/lib32/x86_64", 0x7fff83e225b0) = -1 ENOENT (No such file or directory)
+19139 open("/usr/lib32/libsensors.so.4", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+19139 stat("/usr/lib32", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+19139 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+19139 fstat(3, {st_mode=S_IFREG|0644, st_size=135744, ...}) = 0
+19139 mmap(NULL, 135744, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fb19f3b0000
+19139 close(3)                          = 0
+19139 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+19139 open("/usr/lib/x86_64-linux-gnu/libsensors.so.4", O_RDONLY|O_CLOEXEC) = 3
+19139 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0'\0\0\0\0\0\0"..., 832) = 832
+19139 fstat(3, {st_mode=S_IFREG|0644, st_size=59752, ...}) = 0
+19139 mmap(NULL, 2155560, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb19efa8000
+19139 mprotect(0x7fb19efb6000, 2093056, PROT_NONE) = 0
+19139 mmap(0x7fb19f1b5000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xd000) = 0x7fb19f1b5000
+19139 close(3)                          = 0
+19139 open("/usr/local/lib/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+19139 open("/usr/lib32/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+19139 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+19139 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+19139 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\360\36\2\0\0\0\0\0"..., 832) = 832
+19139 fstat(3, {st_mode=S_IFREG|0755, st_size=1853400, ...}) = 0
+19139 mmap(NULL, 3961912, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb19ebe0000
+19139 mprotect(0x7fb19ed9d000, 2097152, PROT_NONE) = 0
+19139 mmap(0x7fb19ef9d000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7fb19ef9d000
+19139 mmap(0x7fb19efa3000, 17464, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fb19efa3000
+19139 close(3)                          = 0
+19139 open("/usr/local/lib/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+19139 open("/usr/lib32/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+19139 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+19139 open("/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+19139 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0T\0\0\0\0\0\0"..., 832) = 832
+19139 fstat(3, {st_mode=S_IFREG|0644, st_size=1063328, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3dd000
+19139 mmap(NULL, 3158344, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb19e8d8000
+19139 mprotect(0x7fb19e9db000, 2093056, PROT_NONE) = 0
+19139 mmap(0x7fb19ebda000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x102000) = 0x7fb19ebda000
+19139 close(3)                          = 0
+19139 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d6000
+19139 arch_prctl(ARCH_SET_FS, 0x7fb19f3d6740) = 0
+19139 mprotect(0x7fb19ef9d000, 16384, PROT_READ) = 0
+19139 mprotect(0x7fb19ebda000, 4096, PROT_READ) = 0
+19139 mprotect(0x7fb19f1b5000, 4096, PROT_READ) = 0
+19139 mprotect(0x604000, 4096, PROT_READ) = 0
+19139 mprotect(0x7fb19f3da000, 4096, PROT_READ) = 0
+19139 munmap(0x7fb19f3b0000, 135744)    = 0
+19139 brk(0)                            = 0x199e000
+19139 brk(0x19bf000)                    = 0x19bf000
+19139 open("/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+19139 fstat(3, {st_mode=S_IFREG|0644, st_size=2919792, ...}) = 0
+19139 mmap(NULL, 2919792, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fb19e608000
+19139 close(3)                          = 0
+19139 statfs("/sys", {f_type="SYSFS_MAGIC", f_bsize=4096, f_blocks=0, f_bfree=0, f_bavail=0, f_files=0, f_ffree=0, f_fsid={0, 0}, f_namelen=255, f_frsize=4096}) = 0
+19139 openat(AT_FDCWD, "/sys/class/i2c-adapter", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3
+19139 getdents(3, /* 2 entries */, 32768) = 48
+19139 getdents(3, /* 0 entries */, 32768) = 0
+19139 close(3)                          = 0
+19139 openat(AT_FDCWD, "/sys/class/hwmon", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3
+19139 getdents(3, /* 6 entries */, 32768) = 176
+19139 readlink("/sys/class/hwmon/hwmon0/device", "../../../it87.656", 254) = 17
+19139 open("/sys/class/hwmon/hwmon0/name", O_RDONLY) = -1 ENOENT (No such file or directory)
+19139 open("/sys/class/hwmon/hwmon0/device/name", O_RDONLY) = 4
+19139 fstat(4, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d5000
+19139 read(4, "it8721\n", 4096)         = 7
+19139 close(4)                          = 0
+19139 munmap(0x7fb19f3d5000, 4096)      = 0
+19139 readlink("/sys/class/hwmon/hwmon0/device/subsystem", "../../../bus/platform", 254) = 21
+19139 openat(AT_FDCWD, "/sys/class/hwmon/hwmon0/device", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 4
+19139 brk(0x19eb000)                    = 0x19eb000
+19139 getdents(4, /* 83 entries */, 32768) = 2664
+19139 stat("/sys/class/hwmon/hwmon0/device/intrusion0_alarm", {st_mode=S_IFREG|0644, st_size=4096, ...}) = 0
+19139 stat("/sys/class/hwmon/hwmon0/device/temp3_offset", {st_mode=S_IFREG|0644, st_size=4096, ...}) = 0
+19139 stat("/sys/class/hwmon/hwmon0/device/in1_alarm", {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 stat("/sys/class/hwmon/hwmon0/device/in1_input", {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 stat("/sys/class/hwmon/hwmon0/device/in8_input", {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 stat("/sys/class/hwmon/hwmon0/device/temp3_alarm", {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 stat("/sys/class/hwmon/hwmon0/device/temp3_input", {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 stat("/sys/class/hwmon/hwmon0/device/temp1_type", {st_mode=S_IFREG|0644, st_size=4096, ...}) = 0
+19139 stat("/sys/class/hwmon/hwmon0/device/fan1_min", {st_mode=S_IFREG|0644, st_size=4096, ...}) = 0
+19139 stat("/sys/class/hwmon/hwmon0/device/fan2_min", {st_mode=S_IFREG|0644, st_size=4096, ...}) = 0
+19139 stat("/sys/class/hwmon/hwmon0/device/temp2_type", {st_mode=S_IFREG|0644, st_size=4096, ...}) = 0
+19139 stat("/sys/class/hwmon/hwmon0/device/in2_alarm", {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 stat("/sys/class/hwmon/hwmon0/device/temp3_type", {st_mode=S_IFREG|0644, st_size=4096, ...}) = 0
+19139 stat("/sys/class/hwmon/hwmon0/device/in2_input", {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 stat("/sys/class/hwmon/hwmon0/device/in3_alarm", {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 stat("/sys/class/hwmon/hwmon0/device/in3_input", {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 stat("/sys/class/hwmon/hwmon0/device/fan1_alarm", {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 stat("/sys/class/hwmon/hwmon0/device/fan1_input", {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 stat("/sys/class/hwmon/hwmon0/device/temp2_offset", {st_mode=S_IFREG|0644, st_size=4096, ...}) = 0
+19139 stat("/sys/class/hwmon/hwmon0/device/in4_alarm", {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 stat("/sys/class/hwmon/hwmon0/device/in4_input", {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 stat("/sys/class/hwmon/hwmon0/device/fan2_alarm", {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 stat("/sys/class/hwmon/hwmon0/device/fan2_input", {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 stat("/sys/class/hwmon/hwmon0/device/in5_alarm", {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 stat("/sys/class/hwmon/hwmon0/device/in5_input", {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 stat("/sys/class/hwmon/hwmon0/device/in6_alarm", {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 stat("/sys/class/hwmon/hwmon0/device/in6_input", {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 stat("/sys/class/hwmon/hwmon0/device/temp1_alarm", {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 stat("/sys/class/hwmon/hwmon0/device/temp1_input", {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 stat("/sys/class/hwmon/hwmon0/device/in0_max", {st_mode=S_IFREG|0644, st_size=4096, ...}) = 0
+19139 stat("/sys/class/hwmon/hwmon0/device/in0_min", {st_mode=S_IFREG|0644, st_size=4096, ...}) = 0
+19139 stat("/sys/class/hwmon/hwmon0/device/in1_max", {st_mode=S_IFREG|0644, st_size=4096, ...}) = 0
+19139 stat("/sys/class/hwmon/hwmon0/device/in1_min", {st_mode=S_IFREG|0644, st_size=4096, ...}) = 0
+19139 stat("/sys/class/hwmon/hwmon0/device/in2_max", {st_mode=S_IFREG|0644, st_size=4096, ...}) = 0
+19139 stat("/sys/class/hwmon/hwmon0/device/in2_min", {st_mode=S_IFREG|0644, st_size=4096, ...}) = 0
+19139 stat("/sys/class/hwmon/hwmon0/device/in3_max", {st_mode=S_IFREG|0644, st_size=4096, ...}) = 0
+19139 stat("/sys/class/hwmon/hwmon0/device/in3_min", {st_mode=S_IFREG|0644, st_size=4096, ...}) = 0
+19139 stat("/sys/class/hwmon/hwmon0/device/in4_max", {st_mode=S_IFREG|0644, st_size=4096, ...}) = 0
+19139 stat("/sys/class/hwmon/hwmon0/device/in4_min", {st_mode=S_IFREG|0644, st_size=4096, ...}) = 0
+19139 stat("/sys/class/hwmon/hwmon0/device/in5_max", {st_mode=S_IFREG|0644, st_size=4096, ...}) = 0
+19139 stat("/sys/class/hwmon/hwmon0/device/in5_min", {st_mode=S_IFREG|0644, st_size=4096, ...}) = 0
+19139 stat("/sys/class/hwmon/hwmon0/device/in6_max", {st_mode=S_IFREG|0644, st_size=4096, ...}) = 0
+19139 stat("/sys/class/hwmon/hwmon0/device/in6_min", {st_mode=S_IFREG|0644, st_size=4096, ...}) = 0
+19139 stat("/sys/class/hwmon/hwmon0/device/in7_max", {st_mode=S_IFREG|0644, st_size=4096, ...}) = 0
+19139 stat("/sys/class/hwmon/hwmon0/device/in7_min", {st_mode=S_IFREG|0644, st_size=4096, ...}) = 0
+19139 stat("/sys/class/hwmon/hwmon0/device/temp1_offset", {st_mode=S_IFREG|0644, st_size=4096, ...}) = 0
+19139 stat("/sys/class/hwmon/hwmon0/device/in0_alarm", {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 stat("/sys/class/hwmon/hwmon0/device/in0_input", {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 stat("/sys/class/hwmon/hwmon0/device/in7_alarm", {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 stat("/sys/class/hwmon/hwmon0/device/temp1_max", {st_mode=S_IFREG|0644, st_size=4096, ...}) = 0
+19139 stat("/sys/class/hwmon/hwmon0/device/temp1_min", {st_mode=S_IFREG|0644, st_size=4096, ...}) = 0
+19139 stat("/sys/class/hwmon/hwmon0/device/temp2_max", {st_mode=S_IFREG|0644, st_size=4096, ...}) = 0
+19139 stat("/sys/class/hwmon/hwmon0/device/temp2_min", {st_mode=S_IFREG|0644, st_size=4096, ...}) = 0
+19139 stat("/sys/class/hwmon/hwmon0/device/temp3_max", {st_mode=S_IFREG|0644, st_size=4096, ...}) = 0
+19139 stat("/sys/class/hwmon/hwmon0/device/temp3_min", {st_mode=S_IFREG|0644, st_size=4096, ...}) = 0
+19139 stat("/sys/class/hwmon/hwmon0/device/in7_input", {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 stat("/sys/class/hwmon/hwmon0/device/temp2_alarm", {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 stat("/sys/class/hwmon/hwmon0/device/temp2_input", {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 getdents(4, /* 0 entries */, 32768) = 0
+19139 close(4)                          = 0
+19139 readlink("/sys/class/hwmon/hwmon1/device", "../../../0000:00:18.4", 254) = 21
+19139 open("/sys/class/hwmon/hwmon1/name", O_RDONLY) = -1 ENOENT (No such file or directory)
+19139 open("/sys/class/hwmon/hwmon1/device/name", O_RDONLY) = 4
+19139 fstat(4, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d5000
+19139 read(4, "fam15h_power\n", 4096)   = 13
+19139 close(4)                          = 0
+19139 munmap(0x7fb19f3d5000, 4096)      = 0
+19139 readlink("/sys/class/hwmon/hwmon1/device/subsystem", "../../../bus/pci", 254) = 16
+19139 openat(AT_FDCWD, "/sys/class/hwmon/hwmon1/device", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 4
+19139 getdents(4, /* 30 entries */, 32768) = 992
+19139 stat("/sys/class/hwmon/hwmon1/device/power1_input", {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 stat("/sys/class/hwmon/hwmon1/device/power1_crit", {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 getdents(4, /* 0 entries */, 32768) = 0
+19139 close(4)                          = 0
+19139 readlink("/sys/class/hwmon/hwmon2/device", "../../../0000:00:18.3", 254) = 21
+19139 open("/sys/class/hwmon/hwmon2/name", O_RDONLY) = -1 ENOENT (No such file or directory)
+19139 open("/sys/class/hwmon/hwmon2/device/name", O_RDONLY) = 4
+19139 fstat(4, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d5000
+19139 read(4, "k10temp\n", 4096)        = 8
+19139 close(4)                          = 0
+19139 munmap(0x7fb19f3d5000, 4096)      = 0
+19139 readlink("/sys/class/hwmon/hwmon2/device/subsystem", "../../../bus/pci", 254) = 16
+19139 openat(AT_FDCWD, "/sys/class/hwmon/hwmon2/device", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 4
+19139 getdents(4, /* 32 entries */, 32768) = 1064
+19139 stat("/sys/class/hwmon/hwmon2/device/temp1_crit", {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 stat("/sys/class/hwmon/hwmon2/device/temp1_crit_hyst", {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 stat("/sys/class/hwmon/hwmon2/device/temp1_input", {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 stat("/sys/class/hwmon/hwmon2/device/temp1_max", {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 getdents(4, /* 0 entries */, 32768) = 0
+19139 close(4)                          = 0
+19139 readlink("/sys/class/hwmon/hwmon3/device", "../../../eeepc-wmi", 254) = 18
+19139 open("/sys/class/hwmon/hwmon3/name", O_RDONLY) = 4
+19139 fstat(4, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d5000
+19139 read(4, "asus\n", 4096)           = 5
+19139 close(4)                          = 0
+19139 munmap(0x7fb19f3d5000, 4096)      = 0
+19139 readlink("/sys/class/hwmon/hwmon3/device/subsystem", "../../../bus/platform", 254) = 21
+19139 openat(AT_FDCWD, "/sys/class/hwmon/hwmon3", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 4
+19139 getdents(4, /* 7 entries */, 32768) = 200
+19139 getdents(4, /* 0 entries */, 32768) = 0
+19139 close(4)                          = 0
+19139 open("/sys/class/hwmon/hwmon3/device/name", O_RDONLY) = -1 ENOENT (No such file or directory)
+19139 getdents(3, /* 0 entries */, 32768) = 0
+19139 close(3)                          = 0
+19139 open("/etc/sensors3.conf", O_RDONLY) = 3
+19139 ioctl(3, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, 0x7fff83e22b30) = -1 ENOTTY (Inappropriate ioctl for device)
+19139 fstat(3, {st_mode=S_IFREG|0644, st_size=11345, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d5000
+19139 read(3, "# libsensors configuration file\n"..., 8192) = 8192
+19139 read(3, "f-*\"\n\n    label in0 \"+3.3V\"\n    "..., 8192) = 3153
+19139 read(3, "", 4096)                 = 0
+19139 read(3, "", 8192)                 = 0
+19139 ioctl(3, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, 0x7fff83e214d0) = -1 ENOTTY (Inappropriate ioctl for device)
+19139 close(3)                          = 0
+19139 munmap(0x7fb19f3d5000, 4096)      = 0
+19139 openat(AT_FDCWD, "/etc/sensors.d", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3
+19139 getdents(3, /* 3 entries */, 32768) = 80
+19139 getdents(3, /* 0 entries */, 32768) = 0
+19139 close(3)                          = 0
+19139 open("/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache", O_RDONLY) = 3
+19139 fstat(3, {st_mode=S_IFREG|0644, st_size=26258, ...}) = 0
+19139 mmap(NULL, 26258, PROT_READ, MAP_SHARED, 3, 0) = 0x7fb19f3c8000
+19139 close(3)                          = 0
+19139 open("/usr/lib/x86_64-linux-gnu/gconv/ISO8859-1.so", O_RDONLY|O_CLOEXEC) = 3
+19139 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\300\5\0\0\0\0\0\0"..., 832) = 832
+19139 fstat(3, {st_mode=S_IFREG|0644, st_size=10320, ...}) = 0
+19139 mmap(NULL, 2105416, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb19e400000
+19139 mprotect(0x7fb19e402000, 2093056, PROT_NONE) = 0
+19139 mmap(0x7fb19e601000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x7fb19e601000
+19139 close(3)                          = 0
+19139 mprotect(0x7fb19e601000, 4096, PROT_READ) = 0
+19139 fstat(1, {st_mode=S_IFCHR|0600, st_rdev=makedev(136, 14), ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d5000
+19139 write(1, "it8721-isa-0290\n", 16) = 16
+19139 write(1, "Adapter: ISA adapter\n", 21) = 21
+19139 open("/sys/class/hwmon/hwmon0/device/in3_label", O_RDONLY) = 3
+19139 fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d4000
+19139 read(3, "+3.3V\n", 4096)          = 6
+19139 read(3, "", 4096)                 = 0
+19139 close(3)                          = 0
+19139 munmap(0x7fb19f3d4000, 4096)      = 0
+19139 open("/sys/class/hwmon/hwmon0/device/in8_label", O_RDONLY) = 3
+19139 fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d4000
+19139 read(3, "Vbat\n", 4096)           = 5
+19139 read(3, "", 4096)                 = 0
+19139 close(3)                          = 0
+19139 munmap(0x7fb19f3d4000, 4096)      = 0
+19139 open("/sys/class/hwmon/hwmon0/device/intrusion0_label", O_RDONLY) = -1 ENOENT (No such file or directory)
+19139 open("/sys/class/hwmon/hwmon0/device/in0_input", O_RDONLY) = 3
+19139 fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d4000
+19139 read(3, "2820\n", 4096)           = 5
+19139 close(3)                          = 0
+19139 munmap(0x7fb19f3d4000, 4096)      = 0
+19139 open("/sys/class/hwmon/hwmon0/device/in0_alarm", O_RDONLY) = 3
+19139 fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d4000
+19139 read(3, "0\n", 4096)              = 2
+19139 close(3)                          = 0
+19139 munmap(0x7fb19f3d4000, 4096)      = 0
+19139 open("/sys/class/hwmon/hwmon0/device/in0_min", O_RDONLY) = 3
+19139 fstat(3, {st_mode=S_IFREG|0644, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d4000
+19139 read(3, "2724\n", 4096)           = 5
+19139 close(3)                          = 0
+19139 munmap(0x7fb19f3d4000, 4096)      = 0
+19139 open("/sys/class/hwmon/hwmon0/device/in0_max", O_RDONLY) = 3
+19139 fstat(3, {st_mode=S_IFREG|0644, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d4000
+19139 read(3, "2868\n", 4096)           = 5
+19139 close(3)                          = 0
+19139 munmap(0x7fb19f3d4000, 4096)      = 0
+19139 write(1, "+12V:        +12.10 V  (min = +1"..., 56) = 56
+19139 open("/sys/class/hwmon/hwmon0/device/in1_input", O_RDONLY) = 3
+19139 fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d4000
+19139 read(3, "2796\n", 4096)           = 5
+19139 close(3)                          = 0
+19139 munmap(0x7fb19f3d4000, 4096)      = 0
+19139 open("/sys/class/hwmon/hwmon0/device/in1_alarm", O_RDONLY) = 3
+19139 fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d4000
+19139 read(3, "0\n", 4096)              = 2
+19139 close(3)                          = 0
+19139 munmap(0x7fb19f3d4000, 4096)      = 0
+19139 open("/sys/class/hwmon/hwmon0/device/in1_min", O_RDONLY) = 3
+19139 fstat(3, {st_mode=S_IFREG|0644, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d4000
+19139 read(3, "2688\n", 4096)           = 5
+19139 close(3)                          = 0
+19139 munmap(0x7fb19f3d4000, 4096)      = 0
+19139 open("/sys/class/hwmon/hwmon0/device/in1_max", O_RDONLY) = 3
+19139 fstat(3, {st_mode=S_IFREG|0644, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d4000
+19139 read(3, "2916\n", 4096)           = 5
+19139 close(3)                          = 0
+19139 munmap(0x7fb19f3d4000, 4096)      = 0
+19139 write(1, "+5V:          +4.99 V  (min =  +"..., 56) = 56
+19139 open("/sys/class/hwmon/hwmon0/device/in2_input", O_RDONLY) = 3
+19139 fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d4000
+19139 read(3, "1488\n", 4096)           = 5
+19139 close(3)                          = 0
+19139 munmap(0x7fb19f3d4000, 4096)      = 0
+19139 open("/sys/class/hwmon/hwmon0/device/in2_alarm", O_RDONLY) = 3
+19139 fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d4000
+19139 read(3, "0\n", 4096)              = 2
+19139 close(3)                          = 0
+19139 munmap(0x7fb19f3d4000, 4096)      = 0
+19139 open("/sys/class/hwmon/hwmon0/device/in2_min", O_RDONLY) = 3
+19139 fstat(3, {st_mode=S_IFREG|0644, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d4000
+19139 read(3, "804\n", 4096)            = 4
+19139 close(3)                          = 0
+19139 munmap(0x7fb19f3d4000, 4096)      = 0
+19139 open("/sys/class/hwmon/hwmon0/device/in2_max", O_RDONLY) = 3
+19139 fstat(3, {st_mode=S_IFREG|0644, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d4000
+19139 read(3, "2196\n", 4096)           = 5
+19139 close(3)                          = 0
+19139 munmap(0x7fb19f3d4000, 4096)      = 0
+19139 write(1, "VCORE:        +1.49 V  (min =  +"..., 56) = 56
+19139 open("/sys/class/hwmon/hwmon0/device/in3_label", O_RDONLY) = 3
+19139 fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d4000
+19139 read(3, "+3.3V\n", 4096)          = 6
+19139 read(3, "", 4096)                 = 0
+19139 close(3)                          = 0
+19139 munmap(0x7fb19f3d4000, 4096)      = 0
+19139 open("/sys/class/hwmon/hwmon0/device/in3_input", O_RDONLY) = 3
+19139 fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d4000
+19139 read(3, "3264\n", 4096)           = 5
+19139 close(3)                          = 0
+19139 munmap(0x7fb19f3d4000, 4096)      = 0
+19139 open("/sys/class/hwmon/hwmon0/device/in3_alarm", O_RDONLY) = 3
+19139 fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d4000
+19139 read(3, "0\n", 4096)              = 2
+19139 close(3)                          = 0
+19139 munmap(0x7fb19f3d4000, 4096)      = 0
+19139 open("/sys/class/hwmon/hwmon0/device/in3_min", O_RDONLY) = 3
+19139 fstat(3, {st_mode=S_IFREG|0644, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d4000
+19139 read(3, "2976\n", 4096)           = 5
+19139 close(3)                          = 0
+19139 munmap(0x7fb19f3d4000, 4096)      = 0
+19139 open("/sys/class/hwmon/hwmon0/device/in3_max", O_RDONLY) = 3
+19139 fstat(3, {st_mode=S_IFREG|0644, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d4000
+19139 read(3, "3624\n", 4096)           = 5
+19139 close(3)                          = 0
+19139 munmap(0x7fb19f3d4000, 4096)      = 0
+19139 write(1, "+3.3V:        +3.26 V  (min =  +"..., 56) = 56
+19139 open("/sys/class/hwmon/hwmon0/device/in4_input", O_RDONLY) = 3
+19139 fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d4000
+19139 read(3, "1560\n", 4096)           = 5
+19139 close(3)                          = 0
+19139 munmap(0x7fb19f3d4000, 4096)      = 0
+19139 open("/sys/class/hwmon/hwmon0/device/in4_alarm", O_RDONLY) = 3
+19139 fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d4000
+19139 read(3, "0\n", 4096)              = 2
+19139 close(3)                          = 0
+19139 munmap(0x7fb19f3d4000, 4096)      = 0
+19139 open("/sys/class/hwmon/hwmon0/device/in4_min", O_RDONLY) = 3
+19139 fstat(3, {st_mode=S_IFREG|0644, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d4000
+19139 read(3, "1104\n", 4096)           = 5
+19139 close(3)                          = 0
+19139 munmap(0x7fb19f3d4000, 4096)      = 0
+19139 open("/sys/class/hwmon/hwmon0/device/in4_max", O_RDONLY) = 3
+19139 fstat(3, {st_mode=S_IFREG|0644, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d4000
+19139 read(3, "2100\n", 4096)           = 5
+19139 close(3)                          = 0
+19139 munmap(0x7fb19f3d4000, 4096)      = 0
+19139 write(1, "DRAM:         +1.56 V  (min =  +"..., 56) = 56
+19139 open("/sys/class/hwmon/hwmon0/device/in5_input", O_RDONLY) = 3
+19139 fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d4000
+19139 read(3, "2532\n", 4096)           = 5
+19139 close(3)                          = 0
+19139 munmap(0x7fb19f3d4000, 4096)      = 0
+19139 open("/sys/class/hwmon/hwmon0/device/in5_alarm", O_RDONLY) = 3
+19139 fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d4000
+19139 read(3, "0\n", 4096)              = 2
+19139 close(3)                          = 0
+19139 munmap(0x7fb19f3d4000, 4096)      = 0
+19139 open("/sys/class/hwmon/hwmon0/device/in5_min", O_RDONLY) = 3
+19139 fstat(3, {st_mode=S_IFREG|0644, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d4000
+19139 read(3, "1896\n", 4096)           = 5
+19139 close(3)                          = 0
+19139 munmap(0x7fb19f3d4000, 4096)      = 0
+19139 open("/sys/class/hwmon/hwmon0/device/in5_max", O_RDONLY) = 3
+19139 fstat(3, {st_mode=S_IFREG|0644, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d4000
+19139 read(3, "2904\n", 4096)           = 5
+19139 close(3)                          = 0
+19139 munmap(0x7fb19f3d4000, 4096)      = 0
+19139 write(1, "VDDA:         +2.53 V  (min =  +"..., 56) = 56
+19139 open("/sys/class/hwmon/hwmon0/device/in6_input", O_RDONLY) = 3
+19139 fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d4000
+19139 read(3, "1152\n", 4096)           = 5
+19139 close(3)                          = 0
+19139 munmap(0x7fb19f3d4000, 4096)      = 0
+19139 open("/sys/class/hwmon/hwmon0/device/in6_alarm", O_RDONLY) = 3
+19139 fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d4000
+19139 read(3, "0\n", 4096)              = 2
+19139 close(3)                          = 0
+19139 munmap(0x7fb19f3d4000, 4096)      = 0
+19139 open("/sys/class/hwmon/hwmon0/device/in6_min", O_RDONLY) = 3
+19139 fstat(3, {st_mode=S_IFREG|0644, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d4000
+19139 read(3, "900\n", 4096)            = 4
+19139 close(3)                          = 0
+19139 munmap(0x7fb19f3d4000, 4096)      = 0
+19139 open("/sys/class/hwmon/hwmon0/device/in6_max", O_RDONLY) = 3
+19139 fstat(3, {st_mode=S_IFREG|0644, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d4000
+19139 read(3, "2004\n", 4096)           = 5
+19139 close(3)                          = 0
+19139 munmap(0x7fb19f3d4000, 4096)      = 0
+19139 write(1, "NB:           +1.15 V  (min =  +"..., 56) = 56
+19139 open("/sys/class/hwmon/hwmon0/device/in7_input", O_RDONLY) = 3
+19139 fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d4000
+19139 read(3, "2352\n", 4096)           = 5
+19139 close(3)                          = 0
+19139 munmap(0x7fb19f3d4000, 4096)      = 0
+19139 open("/sys/class/hwmon/hwmon0/device/in7_alarm", O_RDONLY) = 3
+19139 fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d4000
+19139 read(3, "1\n", 4096)              = 2
+19139 close(3)                          = 0
+19139 munmap(0x7fb19f3d4000, 4096)      = 0
+19139 open("/sys/class/hwmon/hwmon0/device/in7_min", O_RDONLY) = 3
+19139 fstat(3, {st_mode=S_IFREG|0644, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d4000
+19139 read(3, "4008\n", 4096)           = 5
+19139 close(3)                          = 0
+19139 munmap(0x7fb19f3d4000, 4096)      = 0
+19139 open("/sys/class/hwmon/hwmon0/device/in7_max", O_RDONLY) = 3
+19139 fstat(3, {st_mode=S_IFREG|0644, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d4000
+19139 read(3, "6000\n", 4096)           = 5
+19139 close(3)                          = 0
+19139 munmap(0x7fb19f3d4000, 4096)      = 0
+19139 write(1, "3VSB:         +2.35 V  (min =  +"..., 63) = 63
+19139 open("/sys/class/hwmon/hwmon0/device/in8_label", O_RDONLY) = 3
+19139 fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d4000
+19139 read(3, "Vbat\n", 4096)           = 5
+19139 read(3, "", 4096)                 = 0
+19139 close(3)                          = 0
+19139 munmap(0x7fb19f3d4000, 4096)      = 0
+19139 open("/sys/class/hwmon/hwmon0/device/in8_input", O_RDONLY) = 3
+19139 fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d4000
+19139 read(3, "3360\n", 4096)           = 5
+19139 close(3)                          = 0
+19139 munmap(0x7fb19f3d4000, 4096)      = 0
+19139 write(1, "Vbat:         +3.36 V  \n", 24) = 24
+19139 open("/sys/class/hwmon/hwmon0/device/fan1_input", O_RDONLY) = 3
+19139 fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d4000
+19139 read(3, "2136\n", 4096)           = 5
+19139 close(3)                          = 0
+19139 munmap(0x7fb19f3d4000, 4096)      = 0
+19139 open("/sys/class/hwmon/hwmon0/device/fan1_min", O_RDONLY) = 3
+19139 fstat(3, {st_mode=S_IFREG|0644, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d4000
+19139 read(3, "14\n", 4096)             = 3
+19139 close(3)                          = 0
+19139 munmap(0x7fb19f3d4000, 4096)      = 0
+19139 open("/sys/class/hwmon/hwmon0/device/fan1_alarm", O_RDONLY) = 3
+19139 fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d4000
+19139 read(3, "0\n", 4096)              = 2
+19139 close(3)                          = 0
+19139 munmap(0x7fb19f3d4000, 4096)      = 0
+19139 write(1, "CPU Fan:     2136 RPM  (min =   "..., 40) = 40
+19139 open("/sys/class/hwmon/hwmon0/device/fan2_input", O_RDONLY) = 3
+19139 fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d4000
+19139 read(3, "1099\n", 4096)           = 5
+19139 close(3)                          = 0
+19139 munmap(0x7fb19f3d4000, 4096)      = 0
+19139 open("/sys/class/hwmon/hwmon0/device/fan2_min", O_RDONLY) = 3
+19139 fstat(3, {st_mode=S_IFREG|0644, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d4000
+19139 read(3, "13\n", 4096)             = 3
+19139 close(3)                          = 0
+19139 munmap(0x7fb19f3d4000, 4096)      = 0
+19139 open("/sys/class/hwmon/hwmon0/device/fan2_alarm", O_RDONLY) = 3
+19139 fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d4000
+19139 read(3, "0\n", 4096)              = 2
+19139 close(3)                          = 0
+19139 munmap(0x7fb19f3d4000, 4096)      = 0
+19139 write(1, "Top Fan:     1099 RPM  (min =   "..., 40) = 40
+19139 open("/sys/class/hwmon/hwmon0/device/temp1_input", O_RDONLY) = 3
+19139 fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d4000
+19139 read(3, "37000\n", 4096)          = 6
+19139 close(3)                          = 0
+19139 munmap(0x7fb19f3d4000, 4096)      = 0
+19139 open("/sys/class/hwmon/hwmon0/device/temp1_input", O_RDONLY) = 3
+19139 fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d4000
+19139 read(3, "37000\n", 4096)          = 6
+19139 close(3)                          = 0
+19139 munmap(0x7fb19f3d4000, 4096)      = 0
+19139 open("/sys/class/hwmon/hwmon0/device/temp1_alarm", O_RDONLY) = 3
+19139 fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d4000
+19139 read(3, "0\n", 4096)              = 2
+19139 close(3)                          = 0
+19139 munmap(0x7fb19f3d4000, 4096)      = 0
+19139 open("/sys/class/hwmon/hwmon0/device/temp1_min", O_RDONLY) = 3
+19139 fstat(3, {st_mode=S_IFREG|0644, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d4000
+19139 read(3, "0\n", 4096)              = 2
+19139 close(3)                          = 0
+19139 munmap(0x7fb19f3d4000, 4096)      = 0
+19139 open("/sys/class/hwmon/hwmon0/device/temp1_max", O_RDONLY) = 3
+19139 fstat(3, {st_mode=S_IFREG|0644, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d4000
+19139 read(3, "105000\n", 4096)         = 7
+19139 close(3)                          = 0
+19139 munmap(0x7fb19f3d4000, 4096)      = 0
+19139 open("/sys/class/hwmon/hwmon0/device/temp1_type", O_RDONLY) = 3
+19139 fstat(3, {st_mode=S_IFREG|0644, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d4000
+19139 read(3, "4\n", 4096)              = 2
+19139 close(3)                          = 0
+19139 munmap(0x7fb19f3d4000, 4096)      = 0
+19139 write(1, "CPU Temp:     +37.0\302\260C  (low  = "..., 81) = 81
+19139 open("/sys/class/hwmon/hwmon0/device/temp2_input", O_RDONLY) = 3
+19139 fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d4000
+19139 read(3, "30000\n", 4096)          = 6
+19139 close(3)                          = 0
+19139 munmap(0x7fb19f3d4000, 4096)      = 0
+19139 open("/sys/class/hwmon/hwmon0/device/temp2_input", O_RDONLY) = 3
+19139 fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d4000
+19139 read(3, "30000\n", 4096)          = 6
+19139 close(3)                          = 0
+19139 munmap(0x7fb19f3d4000, 4096)      = 0
+19139 open("/sys/class/hwmon/hwmon0/device/temp2_alarm", O_RDONLY) = 3
+19139 fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d4000
+19139 read(3, "0\n", 4096)              = 2
+19139 close(3)                          = 0
+19139 munmap(0x7fb19f3d4000, 4096)      = 0
+19139 open("/sys/class/hwmon/hwmon0/device/temp2_min", O_RDONLY) = 3
+19139 fstat(3, {st_mode=S_IFREG|0644, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d4000
+19139 read(3, "0\n", 4096)              = 2
+19139 close(3)                          = 0
+19139 munmap(0x7fb19f3d4000, 4096)      = 0
+19139 open("/sys/class/hwmon/hwmon0/device/temp2_max", O_RDONLY) = 3
+19139 fstat(3, {st_mode=S_IFREG|0644, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d4000
+19139 read(3, "105000\n", 4096)         = 7
+19139 close(3)                          = 0
+19139 munmap(0x7fb19f3d4000, 4096)      = 0
+19139 open("/sys/class/hwmon/hwmon0/device/temp2_type", O_RDONLY) = 3
+19139 fstat(3, {st_mode=S_IFREG|0644, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d4000
+19139 read(3, "4\n", 4096)              = 2
+19139 close(3)                          = 0
+19139 munmap(0x7fb19f3d4000, 4096)      = 0
+19139 write(1, "MB Temp:      +30.0\302\260C  (low  = "..., 81) = 81
+19139 open("/sys/class/hwmon/hwmon0/device/intrusion0_label", O_RDONLY) = -1 ENOENT (No such file or directory)
+19139 open("/sys/class/hwmon/hwmon0/device/intrusion0_alarm", O_RDONLY) = 3
+19139 fstat(3, {st_mode=S_IFREG|0644, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d4000
+19139 read(3, "0\n", 4096)              = 2
+19139 close(3)                          = 0
+19139 munmap(0x7fb19f3d4000, 4096)      = 0
+19139 write(1, "intrusion0:  OK\n", 16) = 16
+19139 write(1, "\n", 1)                 = 1
+19139 write(1, "fam15h_power-pci-00c4\n", 22) = 22
+19139 write(1, "Adapter: PCI adapter\n", 21) = 21
+19139 open("/sys/class/hwmon/hwmon1/device/power1_label", O_RDONLY) = -1 ENOENT (No such file or directory)
+19139 open("/sys/class/hwmon/hwmon1/device/power1_label", O_RDONLY) = -1 ENOENT (No such file or directory)
+19139 open("/sys/class/hwmon/hwmon1/device/power1_crit", O_RDONLY) = 3
+19139 fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d4000
+19139 read(3, "219761718\n", 4096)      = 10
+19139 close(3)                          = 0
+19139 munmap(0x7fb19f3d4000, 4096)      = 0
+19139 open("/sys/class/hwmon/hwmon1/device/power1_input", O_RDONLY) = 3
+19139 fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d4000
+19139 read(3, "149861177\n", 4096)      = 10
+19139 close(3)                          = 0
+19139 munmap(0x7fb19f3d4000, 4096)      = 0
+19139 write(1, "power1:      149.86 W  (crit = 2"..., 41) = 41
+19139 write(1, "\n", 1)                 = 1
+19139 write(1, "k10temp-pci-00c3\n", 17) = 17
+19139 write(1, "Adapter: PCI adapter\n", 21) = 21
+19139 open("/sys/class/hwmon/hwmon2/device/temp1_input", O_RDONLY) = 3
+19139 fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d4000
+19139 read(3, "22750\n", 4096)          = 6
+19139 close(3)                          = 0
+19139 munmap(0x7fb19f3d4000, 4096)      = 0
+19139 open("/sys/class/hwmon/hwmon2/device/temp1_input", O_RDONLY) = 3
+19139 fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d4000
+19139 read(3, "22750\n", 4096)          = 6
+19139 close(3)                          = 0
+19139 munmap(0x7fb19f3d4000, 4096)      = 0
+19139 open("/sys/class/hwmon/hwmon2/device/temp1_max", O_RDONLY) = 3
+19139 fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d4000
+19139 read(3, "70000\n", 4096)          = 6
+19139 close(3)                          = 0
+19139 munmap(0x7fb19f3d4000, 4096)      = 0
+19139 open("/sys/class/hwmon/hwmon2/device/temp1_crit", O_RDONLY) = 3
+19139 fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d4000
+19139 read(3, "90000\n", 4096)          = 6
+19139 close(3)                          = 0
+19139 munmap(0x7fb19f3d4000, 4096)      = 0
+19139 open("/sys/class/hwmon/hwmon2/device/temp1_crit_hyst", O_RDONLY) = 3
+19139 fstat(3, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+19139 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb19f3d4000
+19139 read(3, "87000\n", 4096)          = 6
+19139 close(3)                          = 0
+19139 munmap(0x7fb19f3d4000, 4096)      = 0
+19139 write(1, "CPU Delta Temp:  +22.8\302\260C  (high"..., 45) = 45
+19139 write(1, "                          (crit "..., 61) = 61
+19139 write(1, "\n", 1)                 = 1
+19139 exit_group(0)                     = ?
+19139 +++ exited with 0 +++

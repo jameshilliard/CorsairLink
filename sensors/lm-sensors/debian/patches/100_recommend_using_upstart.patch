@@ -1,0 +1,15 @@
+---
+ prog/detect/sensors-detect |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+--- a/prog/detect/sensors-detect
++++ b/prog/detect/sensors-detect
+@@ -6662,7 +6662,7 @@
+ 
+ 		print "Successful!\n\n";
+ 		print "Monitoring programs won't work until the needed modules are\n".
+-		      "loaded. You may want to run '/etc/init.d/kmod start'\n".
++		      "loaded. You may want to run 'service kmod start'\n".
+ 		      "to load them.\n";
+ 	}
+ 	print "\n";

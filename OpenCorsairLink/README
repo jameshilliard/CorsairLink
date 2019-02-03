@@ -1,0 +1,6 @@
+
+This needs two things built. First hidapi-0.7.0/linux/hid-libusb.o needs to
+get rebuilt by going to that directory and typing 'make hid-libusb.o'.
+Then go into src/ and type make. You should remove OpenCorsairLink from 
+that diredctory and any .o files to force clean build since the dependancies 
+from OpenCorsairLink to .o's are not correct.

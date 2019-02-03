@@ -1,0 +1,134 @@
+
+What is contained in this tar-ball is Linux kernel drivers created
+by using the information supplied on this forum. I would not have had
+the time to gather the needed information my self. So special thanks
+to users CFSworks and Thatualle1970 for doing the hard work... In any
+case their collected information motivated me to do this set of drivers.
+
+There are a set of drivers which enable the H80i/H100i and the Commander
+with a Cooling Node to work with lm-sensors. There is one driver for
+H80i/H100i called h80i and one for the cooling node called clink.
+These drivers are setup to support lm-sensors through the /sys (sysfs)
+interface like many other sensor drivers.
+
+The hardware I have is a "h80i" and a "Commander with a Cooling Node".
+So that is what I tested with and which hardware this work supports.
+Also I used a modified version of "OpenCorsairLink" as a test-bed
+for these drivers. Lastly the lm-sensor as is supplied does not
+support sensor hardware that is usb based. So I supplied a patched
+version of libsensors. I did this development on Ubuntu 13.10 with
+all updates applied.
+
+So the following is what is supplied:
+    h80 - This directory contains both drivers, h80i and clink.
+    sensors - This directory has patched source for lm-sensors
+              supplies libsensors.
+    OpenCorsairLink - Has modified version used for this work.
+
+Now some details about each of these parts:
+
+
+
+First the Drivers:
+-------------------
+
+First these drivers could have been done as one driver module
+that supports both since there is much in common between the
+two interfaces.  But there are also many differences. So to
+keep things simple during the initial development, I elected
+to do them as separate drivers. Since these are new drivers,
+I elected to do "read-only" initial versions. That means 
+settings of modes and parameters, leds and such are not yet
+supported. However it looks like it is easy to add these features.
+
+I have been running both drivers for about two weeks (running the
+system 24 hours a day) with the above mentioned hardware. Again
+this system is running ubuntu 13.10 and has both psensor and
+gkrellm running (to cause extra traffic through the drivers).
+I did not see any negative events. Also all data returned
+looked correct.
+
+Making and installing the drivers should be relatively simple.
+If you change directors to h80 and type "make". It will make
+both drivers. The makefile should automatically adjust to the
+current running version of Linux. Now to install the drivers
+you can type "make install". Note that this will not make
+these automatically load at boot time. For Ubuntu you need
+to two lines to /etc/modules. Also you can use modprobe to
+load them manually and rmmod ro unload them.
+
+There is one issue that I found so far. That is when the
+system initially boots it does not see the hardware. It looks
+like the USB framework (or something else) may be leaving
+the hardware in a state that causes the drivers to not find
+the hardware. There is a work around, however. I unload
+both drivers then use OpenCorsairLink to reset the hardware
+and then I reload the drivers and restart sensord. I added
+the following lines to /etc/rc.local to automate this work
+around:
+
+   echo "reloading h80i driver."
+   rmmod h80i
+   /usr/local/bin/OpenCorsairLink -i 1
+   modprobe h80i
+   echo "reloading clink driver."
+   rmmod clink
+   /usr/local/bin/OpenCorsairLink -i 2
+   modprobe clink
+   /etc/init.d/sensord restart
+
+I have not yet had time to investigate this problem and since
+the work around seems to always work, its not as important...
+
+
+
+The OpenCorsairLink Command:
+-----------------------------
+
+This command  seemed like a good test-bed to do quick protocol
+and hardware interface testing. Also to make it easier to move
+test code directly into the driver, I converted the program from
+C++ to C. Then I added an option to select which hardware and
+interface to use.
+
+The program may be found in the directory OpenCorsairLink. There
+is a README file in that directory that talks about how to build
+the program. Note that the build is somewhat ruff and I must
+apologize for that! I copied the finished program into
+/usr/local/bin. 
+
+
+
+The lm-sensors library libsensors:
+-----------------------------
+
+Most of the lm-sensors package from ubuntu 13.10 is in the directory
+sensors. If you go into sensors/lm-sensors/lm_sensors-3.3.3 and
+type make. It should make all of lm-sensors. But you only need to
+take the library modules libsensors.a and libsensors.so.4.3.2
+and replace the ones on your system. In case someone wants to
+do this on a different distro, I included a patch file in
+sensors/lm-sensors/corsair.patch to help apply the changes to an-
+other version...
+
+
+
+Now one closing note. If you find this stuff helpful then you
+are welcome to it for use. Also if you make changes and or
+improvements then please please give it back to the community!
+If you need help with it, send to a message and I will try to
+help.
+
+Again I want to thank the users which made this code possible
+by posting the information in the forums page:
+
+http://forum.corsair.com/v3/showthread.php?t=120092&highlight=linux&page=3
+
+This is the main motivation that caused me to write these drivers.
+So thank you CFSworks and Thatualle1970!!
+
+
+Thank You
+barryha
+
+barryha@earthlink.net

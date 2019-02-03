@@ -1,0 +1,148 @@
+fixes taken from revisions 6162 to 6166 upstream
+---
+ prog/pwm/pwmconfig |   42 +++++++++++++++++++++++++++++-------------
+ 1 file changed, 29 insertions(+), 13 deletions(-)
+
+--- a/prog/pwm/pwmconfig
++++ b/prog/pwm/pwmconfig
+@@ -144,7 +144,7 @@
+ # $1 = padding
+ function print_devices()
+ {
+-	local name
++	local name device
+ 
+ 	for device in $DEVICES
+ 	do
+@@ -157,7 +157,8 @@
+ # $1 = pwm file name
+ function is_pwm_auto()
+ {
+-	ENABLE=${1}_enable
++	local ENABLE=${1}_enable
++
+ 	if [ -f $ENABLE ]
+ 	then
+ 		if [ "`cat $ENABLE`" -gt 1 ]
+@@ -172,7 +173,8 @@
+ # $1 = pwm file name
+ function pwmdisable()
+ {
+-	ENABLE=${1}_enable
++	local ENABLE=${1}_enable
++
+ 	# No enable file? Just set to max
+ 	if [ ! -f $ENABLE ]
+ 	then
+@@ -211,7 +213,8 @@
+ # $1 = pwm file name
+ function pwmenable()
+ {
+-	ENABLE=${1}_enable
++	local ENABLE=${1}_enable
++
+ 	if [ -w $ENABLE ]
+ 	then
+ 		echo 1 2>/dev/null > $ENABLE
+@@ -236,7 +239,8 @@
+ echo 'Found the following PWM controls:'
+ for i in $PWM
+ do
+-	echo "   $i"
++	P=`cat $i`
++	echo "   $i           current value: $P"
+ 	if [ -w $i ]
+ 	then
+ 		# First check if PWM output is in automatic mode
+@@ -325,9 +329,9 @@
+ 
+ function pwmdetail()
+ {
+-	P=$1
+-	F=$2
+-	PLOT=
++	local P=$1 F=$2
++	local X PLOT= TMP1 TMP2
++	local threshold=100000 pwm S
+ 
+ 	type $PLOTTER > /dev/null 2>&1
+ 	if [ $? -eq 0 ]
+@@ -358,7 +362,6 @@
+ 		> $TMP2
+ 	fi
+ 
+-	local threshold=100000
+ 	let pwm=$MAX
+ 	pwmenable $P
+ 	while [ $pwm -ge 0 ]
+@@ -443,12 +446,13 @@
+ 
+ 	let pwmactivecount=0
+ 	let count=1
++	S_MIN=
+ 	for j in $GOODFAN
+ 	do
+ 		OS=`echo $SPEEDS | cut -d' ' -f$count`
+ 		S=`echo $CURRENT_SPEEDS | cut -d' ' -f$count`
+ 		echo "  $j ... speed was $OS now $S"
+-		let threshold=2*$OS/3
++		let threshold=3*$OS/4
+ 		if [ $S -lt $threshold ]
+ 		then
+ 			echo "    It appears that fan $j"
+@@ -461,7 +465,6 @@
+ 				let pwmactivecount=1
+ 				pwmactive="$i ${pwmactive}"
+ 				fanactive="$j ${fanactive}"
+-				fanactive_min="$S ${fanactive_min}"
+ 
+ 				# Give all correlated fans time to return to full speed
+ 				sleep $DELAY
+@@ -471,9 +474,15 @@
+ 					exit 1
+ 				fi
+ 			else
+-				fanactive="$j+${fanactive}" #not supported yet by fancontrol
+-				fanactive_min="$S+${fanactive_min}"
++				fanactive="$j+${fanactive}"
+ 			fi
++
++			# Keep track of the slowest fan controlled by one PWM
++			if [ -z "$S_MIN" ] || [ $S -lt $S_MIN ]
++			then
++				S_MIN=$S
++			fi
++
+ 			S=`cat $j`
+ 			if [ $S -lt $threshold ]
+ 			then
+@@ -506,8 +515,11 @@
+ 		if [ "$X" = "y" -o "$X" = "Y" ]
+ 		then
+ 			pwmactive="$i ${pwmactive}"
++			fanactive_min="0 $fanactive_min"
+ 		fi
+ 		echo
++	else
++		fanactive_min="$S_MIN $fanactive_min"
+ 	fi
+ done
+ 
+@@ -656,6 +668,8 @@
+ # $1 = pwm value below which the fan is stopped
+ function TestMinStart()
+ {
++	local fanok FANTEST
++
+ 	echo
+ 	echo 'Now we increase the PWM value in 10-unit-steps.'
+ 	echo 'Let the fan stop completely, then press return until the'
+@@ -781,6 +795,8 @@
+ 
+ function SaveConfig()
+ {
++	local tmpfile
++
+ 	RememberDevices "$FCTEMPS" "$FCFANS"
+ 
+ 	echo

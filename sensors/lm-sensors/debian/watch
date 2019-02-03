@@ -1,0 +1,2 @@
+version=3
+http://www.lm-sensors.org/wiki/Download .*/lm_sensors-(\d.*)\.(?:tgz|tbz2|txz|tar\.(?:gz|bz2|xz))

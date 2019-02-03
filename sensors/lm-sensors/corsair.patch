@@ -1,0 +1,34 @@
+diff -r lm_sensors-3.3.3.org/lib/access.c lm_sensors-3.3.3/lib/access.c
+369a370,371
+> 	case SENSORS_BUS_TYPE_USB:
+> 		return "USB adapter";
+diff -r lm_sensors-3.3.3.org/lib/data.c lm_sensors-3.3.3/lib/data.c
+125a126,127
+> 	else if (!strncmp(name, "usb", dash - name))
+> 		res->bus.type = SENSORS_BUS_TYPE_USB;
+194a197,199
+> 				chip->bus.nr, chip->addr);
+> 	case SENSORS_BUS_TYPE_USB:
+> 		return snprintf(str, size, "%s-usb-%hd-%x", chip->prefix,
+diff -r lm_sensors-3.3.3.org/lib/sensors.h lm_sensors-3.3.3/lib/sensors.h
+46a47
+> #define SENSORS_BUS_TYPE_USB		7
+diff -r lm_sensors-3.3.3.org/lib/sysfs.c lm_sensors-3.3.3/lib/sysfs.c
+443c443
+< 
+---
+>  
+642a643,644
+> 	memset(linkpath, 0, NAME_MAX);
+> 	memset(subsys_path, 0, NAME_MAX);
+644a647
+> 
+670a674
+> 			memset(bus_path, 0, NAME_MAX);
+716a721,726
+> 	} else
+> 	if (subsys && !strcmp(subsys, "usb")) {
+> 		entry.chip.bus.type = SENSORS_BUS_TYPE_USB;
+> 		/* As of kernel 2.6.32, the hid device names don't look good */
+> 		entry.chip.bus.nr = 0;
+> 		entry.chip.addr = 0;
